@@ -1,0 +1,19 @@
+#!/bin/bash
+fg=eceff4
+wrong=bf616a
+highlight=81a1c1
+date=5e81ac
+verify=a3be8c
+i3lock -i ~/.config/awesome/wallpapers/Nord.png \
+  -ntfe --force-clock --indicator --radius=40 --ring-width=80 \
+  --inside-color=$fg --ring-color=$date --insidever-color=$verify \
+  --ringver-color=$verify --insidewrong-color=$wrong --ringwrong-color=$wrong \
+  --line-uses-inside --keyhl-color=$verify --separator-color=$verify --bshl-color=$verify \
+  --date-color=$date --time-color=$date --greeter-color=$date --wrong-color=$wrong --verif-color=$verify \
+  --time-str="%H:%M" --time-size=140 --date-str="%a, %d %b" --date-size=45 \
+  --verif-text="Verifying Password..." --wrong-text="Wrong Password!" --noinput-text="" \
+  --greeter-text="Type the password to Unlock" --time-font="RobotoMono Nerd Font:style=Bold" \
+  --date-font="RobotoMono Nerd Font" --verif-font="Roboto Mono Nerd Font" --greeter-font="Roboto Mono Nerd Font" \
+  --wrong-font="Roboto Mono Nerd Font" --verif-size=23 --greeter-size=23 --wrong-size=23 \
+  --pointer=default --refresh-rate=0 --pass-media-keys --pass-volume-keys \
+  --greeter-pos="960:780" --time-pos="960:370" --date-pos="960:430" --ind-pos="960:560" \
