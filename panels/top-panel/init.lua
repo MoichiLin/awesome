@@ -198,7 +198,7 @@ top_panel.create = function(s)
         layout = wibox.layout.align.horizontal,
         {
             layout = wibox.layout.fixed.horizontal,
-            wibox.container.margin(TaskList(s), dpi(2), dpi(2), dpi(3), dpi(3)),
+            wibox.container.margin(TaskList(s), dpi(3), dpi(3), dpi(0), dpi(3)),
             add_button
         },
         wibox.container.margin(TagList(s), dpi(2), dpi(2), dpi(2), dpi(2)),
