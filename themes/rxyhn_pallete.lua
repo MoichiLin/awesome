@@ -39,8 +39,8 @@ theme.light_grey = "#4f5a5e"
 theme.transparent = "#00000000"
 
 --- Black
-theme.xcolor0 = "#1C252C"
-theme.xcolor8 = "#484E5B"
+--theme.xcolor0 = "#1C252C"
+--theme.xcolor8 = "#484E5B"
 
 --- Red
 theme.xcolor1 = "#DF5B61"
@@ -67,8 +67,16 @@ theme.xcolor6 = "#67AFC1"
 theme.xcolor14 = "#7ACFE4"
 
 --- White
-theme.xcolor7 = "#D9D7D6"
-theme.xcolor15 = "#E5E5E5"
+--theme.xcolor7 = "#D9D7D6"
+--theme.xcolor15 = "#E5E5E5"
+
+--- Customization
+theme.xcolor15 = "#36b4f7"
+theme.xcolor0 = "#D5EFF0"
+theme.xcolor7 = "#000000"
+theme.xcolor8 = "#484E5B"
+theme.green = "#66edb3"
+theme.yellow = "#f5f4b0"
 
 -- =========================================================
 -- =================== THEME VARIABLES =====================
@@ -101,7 +109,7 @@ local icon_location1 = os.getenv("HOME") .. "/.config/awesome/icons/flaticons/"
 local icon_location2 = os.getenv("HOME") .. "/.config/awesome/icons/places/"
 
 awful.spawn.easy_async_with_shell(
-    [[        
+    [[
         for x in ]] .. icon_location1 .. [[*
         do
         sed -e "s/]] ..
@@ -164,15 +172,15 @@ theme.accent_normal_min = theme.xcolor2
 theme.accent_normal_float = theme.xcolor5
 theme.close_icon = icons.close
 theme.maximize_icon = ""
-theme.minimize_icon = "" 
-theme.float_icon = "" 
+theme.minimize_icon = ""
+theme.float_icon = ""
 
 -- ------ foreground ---------
 theme.fg_normal = theme.xcolor15
 theme.fg_critical = theme.xcolor9
 
 -- ------ background ---------
-theme.bg_normal = "#0B161A"
+theme.bg_normal = theme.xcolor0
 theme.bg_normal_alt = theme.lighter_xbackground
 theme.bg_critical = theme.xcolor9
 
@@ -221,9 +229,9 @@ theme.menu_bg_normal = theme.xcolor0
 -- ------- TaskList ----------
 theme.tasklist_font = "Roboto Mono Nerd Fonts Bold 10"
 theme.tasklist_bg_normal = theme.xcolor0
-theme.tasklist_bg_focus = theme.xcolor8 .. "4f"
+theme.tasklist_bg_focus = theme.green .. "8f"
 theme.tasklist_bg_urgent = theme.xcolor0
-theme.tasklist_fg_focus = theme.xcolor15
+theme.tasklist_fg_focus = theme.xcolor7
 theme.tasklist_fg_urgent = theme.xcolor9
 theme.tasklist_fg_normal = theme.xcolor7
 -- theme.tasklist_disable_task_name = true
@@ -232,7 +240,7 @@ theme.tasklist_shape = helpers.rect(dpi(4))
 
 -- -------- Taglist ----------
 theme.taglist_bg_empty    = theme.bg_normal
-theme.taglist_bg_occupied = theme.bg_normal
+theme.taglist_bg_occupied = theme.green
 theme.taglist_bg_urgent   = theme.bg_normal
 theme.taglist_bg_focus    = theme.bg_normal
 theme.taglist_font        = theme.title_fonts
