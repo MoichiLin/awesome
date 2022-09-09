@@ -27,7 +27,7 @@ local theme = {}
 --- Special
 theme.xforeground = "#D9D7D6"
 theme.darker_xbackground = "#000a0e"
-theme.xbackground = "#061115"
+theme.xbackground = "#D5EFF0"
 theme.lighter_xbackground = "#0d181c"
 theme.one_bg = "#131e22"
 theme.one_bg2 = "#1c272b"
@@ -74,7 +74,7 @@ theme.xcolor14 = "#7ACFE4"
 theme.xcolor15 = "#36b4f7"
 theme.xcolor0 = "#D5EFF0"
 theme.xcolor7 = "#000000"
-theme.xcolor8 = "#484E5B"
+theme.xcolor8 = "#54abb0"
 theme.green = "#66edb3"
 theme.yellow = "#fdff80"
 
@@ -269,7 +269,7 @@ theme.snap_bg = theme.xcolor4
 theme.snap_border_width = dpi(1)
 
 -- ---- Toggle buttons -------
-theme.toggle_button_inactive = theme.grey
+theme.toggle_button_inactive = theme.xcolor0
 theme.toggle_button_active = theme.xcolor4 .. "60"
 
 -- --------- music -----------
