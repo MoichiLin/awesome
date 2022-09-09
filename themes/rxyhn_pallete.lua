@@ -76,7 +76,7 @@ theme.xcolor0 = "#D5EFF0"
 theme.xcolor7 = "#000000"
 theme.xcolor8 = "#484E5B"
 theme.green = "#66edb3"
-theme.yellow = "#f5f4b0"
+theme.yellow = "#fdff80"
 
 -- =========================================================
 -- =================== THEME VARIABLES =====================
@@ -240,12 +240,12 @@ theme.tasklist_shape = helpers.rect(dpi(4))
 
 -- -------- Taglist ----------
 theme.taglist_bg_empty    = theme.bg_normal
-theme.taglist_bg_occupied = theme.green
+theme.taglist_bg_occupied = theme.yellow
 theme.taglist_bg_urgent   = theme.bg_normal
 theme.taglist_bg_focus    = theme.bg_normal
 theme.taglist_font        = theme.title_fonts
 theme.taglist_spacing     = 2
-theme.taglist_fg_focus    = theme.xcolor15
+theme.taglist_fg_focus    = theme.xcolor0
 theme.taglist_fg_occupied = theme.xcolor4
 theme.taglist_fg_urgent   = theme.xcolor9
 theme.taglist_fg_empty    = theme.xcolor8
