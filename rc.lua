@@ -30,6 +30,9 @@ local color_scheme = {
 }
 local colors = color_scheme[3]
 
+--Num lock
+awful.spawn.once("numlockx on")
+
 --Rofi Launcher
 awful.spawn.easy_async_with_shell([[echo '@theme "rofi-]] ..
     colors .. [["' > ]] .. os.getenv("HOME") .. [[/.config/rofi/config.rasi]])
