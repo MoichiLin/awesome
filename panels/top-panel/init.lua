@@ -52,33 +52,34 @@ local cw = wibox.container.margin(textclock, dpi(12), dpi(12), dpi(8), dpi(8))
 
 -- ------ Plus Button --------
 --Rofi Launcher
-local rofi_command =
-"env /usr/bin/rofi -dpi " ..
-    get_dpi() ..
-    " -width " ..
-    dpi(400) ..
-    " -show drun -theme " ..
-    gears.filesystem.get_configuration_dir() .. "/configs/rofi/rofi-" .. beautiful.rofi_plus_sign .. ".rasi"
-local add_button = mat_icon_button(mat_icon(icons.plus, dpi(24)))
-add_button:buttons(
-    gears.table.join(
-        awful.button(
-            {},
-            1,
-            nil,
-            function()
-                awful.spawn(
-                    rofi_command
+
+--local rofi_command =
+--"env /usr/bin/rofi -dpi " ..
+--    get_dpi() ..
+--    " -width " ..
+--    dpi(400) ..
+--    " -show drun -theme " ..
+--    gears.filesystem.get_configuration_dir() .. "/configs/rofi/rofi-" .. beautiful.rofi_plus_sign .. ".rasi"
+--local add_button = mat_icon_button(mat_icon(icons.plus, dpi(24)))
+--add_button:buttons(
+--    gears.table.join(
+--        awful.button(
+--            {},
+--            1,
+--            nil,
+--            function()
+--                awful.spawn(
+--                    rofi_command
                 -- awful.screen.focused().selected_tag.defaultApp,
                 -- {
                 --     tag = _G.mouse.screen.selected_tag,
                 --     placement = awful.placement.bottom_right
                 -- }
-                )
-            end
-        )
-    )
-)
+--                )
+--            end
+--        )
+--    )
+--)
 
 -- -- layoutBox Keybinds -----
 local LayoutBox = function(s)
