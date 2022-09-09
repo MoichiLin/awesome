@@ -3,3 +3,6 @@ yay -S awesome-git
 
 ### install dependencies
 yay -S picom-git playerctl pamixer numberx
+
+redited by
+https://github.com/sachnr/dotfiles
