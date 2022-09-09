@@ -34,7 +34,7 @@ bling.widget.tag_preview.enable {
       }
     )
   end,
-  scale = 0.16,
+  scale = 0.40,
   honor_padding = true,
   honor_workarea = true,
   background_widget = wibox.widget {
