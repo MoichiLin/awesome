@@ -34,8 +34,8 @@ local colors = color_scheme[3]
 awful.spawn.once("numlockx on")
 
 --Rofi Launcher
-awful.spawn.easy_async_with_shell([[echo '@theme "rofi-]] ..
-    colors .. [["' > ]] .. os.getenv("HOME") .. [[/.config/rofi/config.rasi]])
+--awful.spawn.easy_async_with_shell([[echo '@theme "rofi-]] ..
+--    colors .. [["' > ]] .. os.getenv("HOME") .. [[/.config/rofi/config.rasi]])
 local rofi_command = "rofi -show drun"
 
 -- Set lock theme
