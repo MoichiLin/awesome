@@ -76,8 +76,7 @@ helpers.check_if_running(
             gears.filesystem.get_configuration_dir() .. "configs/picom.conf", false)
     end
 )
-helpers.run_once_pgrep("mpd")
-helpers.run_once_pgrep("mpDris2")
+helpers.run_once_pgrep("fcitx5")
 --- Polkit Agent
 helpers.run_once_ps(
     "polkit-gnome-authentication-agent-1",
