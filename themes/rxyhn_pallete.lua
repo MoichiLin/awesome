@@ -129,17 +129,17 @@ awful.spawn.easy_async_with_shell(
 )
 
 -- ------- Wallpaper ---------
-local directory = gfs.get_configuration_dir() .. "wallpapers/"
-local wallpapers = {
-    "garden-house.png",
-    "wallpaper-dimmed.jpg",
-    "wp8148965-minimalist-landscape-wallpapers.jpg",
-    "mountains-landscape-sunrise-minimalist-minimalism-y7214.jpg"
-}
-theme.wallpaper = directory .. wallpapers[2]
+--local directory = gfs.get_configuration_dir() .. "wallpapers/"
+--local wallpapers = {
+--    "garden-house.png",
+--    "wallpaper-dimmed.jpg",
+--    "wp8148965-minimalist-landscape-wallpapers.jpg",
+--    "mountains-landscape-sunrise-minimalist-minimalism-y7214.jpg"
+--}
+--theme.wallpaper = directory .. wallpapers[2]
 
 -- --------- rofi ------------
-theme.rofi_plus_sign = "nord"
+---theme.rofi_plus_sign = "nord"
 
 -- ---- profile picture ------
 theme.pfp = gears.surface.load_uncached(gears.filesystem.get_configuration_dir() .. "icons/user/profile.png")
