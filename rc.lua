@@ -86,6 +86,7 @@ helpers.run_once_ps(
     "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 )
 --- Other stuff
+helpers.run_once_pgrep("sh ~/wallpaper/readom.sh")
 helpers.run_once_pgrep("blueman-applet")
 helpers.run_once_pgrep("nm-applet --indicator")
 helpers.run_once_pgrep(gears.filesystem.get_configuration_dir() .. "configs/nvidia-startup")
